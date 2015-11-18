@@ -1,8 +1,7 @@
 package uk.co.jemos.podam.typeManufacturers;
 
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * Parent of all type manufacturer.
@@ -15,7 +14,7 @@ public abstract class AbstractTypeManufacturer implements TypeManufacturer {
 
 
     /** The application logger */
-    private static final Logger LOG = LoggerFactory.getLogger(AbstractTypeManufacturer.class);
+    private static final Logger LOG = LogManager.getLogger(AbstractTypeManufacturer.class);
 
     /**
      * Checks that the given wrapper is valid.
